@@ -1,0 +1,50 @@
+
+
+.svg{
+  width: fit-content;
+  height: auto;
+  margin: auto;
+}
+
+.size{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+path.arc {
+  stroke:url(#mainGradient);
+  opacity: 1;
+}
+
+path.left {
+  fill:#fb7375;
+  opacity: 1;
+}
+
+path.right {
+  fill:#00acc2;
+  opacity: 1;
+}
+path.arrow {
+  fill: #00acc2;
+  opacity: 1;
+}
+
+
+.gradient-color-left {
+  stop-color: #fb7375;  /* Indigo */
+}
+
+.gradient-color-midle {
+  stop-color: #ffc093;  /* Indigo */
+}
+
+.gradient-color-right {
+  stop-color: #00acc2;  /* Teal */
+}
+
+.graphicSvg{
+  stroke: url(#svgGradient);
+  fill: url(#svgFillGradient);
+}
