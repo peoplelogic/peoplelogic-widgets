@@ -1,10 +1,10 @@
 import React,{useEffect} from 'react';
 import {setArcSvg} from './setArcSvg';
 
-const ArcSvg = ({rotateToPercentage}) =>{
+const ArcSvg = ({width,height,rotateToPercentage}) =>{
 
   useEffect(() => {
-    setArcSvg(300,400,rotateToPercentage);
+    setArcSvg(width,height,rotateToPercentage);
   }, [rotateToPercentage]);
   
 
