@@ -5,7 +5,7 @@ const ArcSvg = ({width,height,rotateToPercentage}) =>{
 
   useEffect(() => {
     setArcSvg(width,height,rotateToPercentage);
-  }, [rotateToPercentage]);
+  }, [width,height,rotateToPercentage]);
   
 
     return (

@@ -5,7 +5,7 @@ const SparkLineSvg = ({width,strokeWidth,percentages}) =>{
 
   useEffect(() => {
     setSparkLine(width,strokeWidth,percentages);
-  }, []);
+  }, [width,percentages,strokeWidth]);
   
 
     return (
