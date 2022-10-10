@@ -1,1 +1,1 @@
-export function setSparkLine(width: any, strokeWidth: any, percentages: any): void;
+export function setSparkLine(width: number, strokeWidth: number, percentages: number[]): void;

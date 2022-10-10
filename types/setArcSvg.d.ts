@@ -1,1 +1,1 @@
-export function setArcSvg(width: Number, height: Number, percentageRotateValue: Number): void;
+export function setArcSvg(width: number, height: number, percentageRotateValue: number): void;

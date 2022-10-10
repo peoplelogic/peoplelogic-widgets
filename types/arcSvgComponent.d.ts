@@ -1,6 +1,6 @@
 export default ArcSvg;
 declare function ArcSvg({ width, height, rotateToPercentage }: {
-    width: Number;
-    height: Number;
-    rotateToPercentage: Number;
+    width: number;
+    height: number;
+    rotateToPercentage: number;
 }): JSX.Element;
