@@ -5,7 +5,6 @@ export const setSparkLine = (width,strokeWidth,percentages)=>{
 
 d3.select(".graphic").selectAll("*").remove();
 
-var scale = 1;
 var graphicSvg = d3
   .select(".graphic")
   .append("svg")
