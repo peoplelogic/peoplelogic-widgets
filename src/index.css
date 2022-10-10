@@ -6,6 +6,14 @@
   margin: auto;
 }
 
+
+.graphic {
+  margin: auto;
+  width: fit-content;
+
+}
+
+
 .size{
   width: 100%;
   height: auto;
@@ -47,4 +55,13 @@ path.arrow {
 .graphicSvg{
   stroke: url(#svgGradient);
   fill: url(#svgFillGradient);
+  width: fit-content;
+}
+
+.graphicBack{
+  fill: url(#svgFillGradient);
+}
+
+.lineSvg{
+  stroke: url(#svgGradient);
 }

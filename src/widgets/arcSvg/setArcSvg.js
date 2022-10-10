@@ -1,5 +1,6 @@
 import * as d3 from "d3";
-import "./index.css";
+import "../../index.css";
+
 
 const svgData = {
   strokeWidth: 20,
