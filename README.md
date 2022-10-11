@@ -6,7 +6,7 @@ In the widgets below, all of them are designed the same way, they both have a fi
 
 to call this widget we just need to import ArcSvg from the arcSvgComponent and call it like this
 
-<ArcSvg width={300} height={300} rotateToPercentage={86} /> 
+<ArcSvg width={300} height={300} rotateToPercentage={86}  
 
 the with param is the with size of the widget i would recomend to get the width from the parent component and the same for the height 
 
