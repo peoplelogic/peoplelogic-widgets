@@ -3,6 +3,9 @@ import "../../index.css";
 
 export const setSparkLine = (width,strokeWidth,percentages)=>{
 
+  var numOfPoints = percentages.length;
+  if (!numOfPoints || !percentages ) return
+
 d3.select(".graphic").selectAll("*").remove();
 
 var graphicSvg = d3
@@ -12,7 +15,7 @@ var graphicSvg = d3
   .attr("width", `${width}`)
   .attr("height", `auto`)
 
-  var numOfPoints = percentages.length;
+  
   var points = [];
 
   percentages.map((p,i)=> points.push({xpoint: (width/numOfPoints*0.5)*i*2, ypoint: (100-p) }))
