@@ -8,7 +8,10 @@ const svgData = {
   transitionDuration: 1500,
 };
 
-export const setArcSvg = (width, height, percentageRotateValue) => {
+export const setArcSvg = (width,height,percentageRotateValue) => {
+
+
+
   const arcStartPosX = width / 4;
   const arcEndPosX = arcStartPosX * 3;
   const arcPosY = height / 2;

@@ -1,11 +1,12 @@
 import React,{useEffect} from 'react';
 import {setSparkLine} from './setSparkLine';
 
-const SparkLineSvg = ({width,strokeWidth,percentages}) =>{
+const SparkLineSvg = ({strokeWidth,percentages}) =>{
 
   useEffect(() => {
-    setSparkLine(width,strokeWidth,percentages);
-  }, [width,percentages,strokeWidth]);
+    window.addEventListener('resize', setSparkLine(strokeWidth,percentages))
+    return window.removeEventListener('resize', setSparkLine(strokeWidth,percentages))
+  }, [percentages,strokeWidth]);
   
 
     return (

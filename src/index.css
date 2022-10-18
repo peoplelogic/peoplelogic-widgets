@@ -1,15 +1,17 @@
 
 
 .svg{
-  width: fit-content;
-  height: auto;
+  width: 60%;
+  height: 400px;
   margin: auto;
 }
 
 
+
 .graphic {
   margin: auto;
-  width: fit-content;
+  width: 60vw;
+  height: 300px;
 
 }
 

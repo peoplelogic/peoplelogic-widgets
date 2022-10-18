@@ -1,6 +1,5 @@
 export default SparkLineSvg;
-declare function SparkLineSvg({ width, strokeWidth, percentages }: {
-    width: number;
+declare function SparkLineSvg({ strokeWidth, percentages }: {
     strokeWidth: number;
     percentages: number[];
 }): JSX.Element;

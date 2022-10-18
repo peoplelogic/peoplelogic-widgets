@@ -1,11 +1,25 @@
 import React,{useEffect} from 'react';
 import {setArcSvg} from './setArcSvg';
+import * as d3 from "d3";
 
-const ArcSvg = ({width,height,rotateToPercentage}) =>{
+const ArcSvg = ({rotateToPercentage}) =>{
 
+  
   useEffect(() => {
-    setArcSvg(width,height,rotateToPercentage);
-  }, [width,height,rotateToPercentage]);
+        window.addEventListener('resize', resizeArcSvg(rotateToPercentage))
+       
+    return window.removeEventListener('resize', resizeArcSvg(rotateToPercentage))
+  }, [rotateToPercentage]);
+
+  const resizeArcSvg = (rotateToPercentage) => {
+
+    var element = d3.select('.svg').node();
+    var width = element.getBoundingClientRect().width;
+    var height = element.getBoundingClientRect().height;
+
+    setArcSvg(width,height,rotateToPercentage)
+    return
+  }
   
 
     return (

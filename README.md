@@ -6,9 +6,11 @@ In the widgets below, all of them are designed the same way, they both have a fi
 
 to call this widget we just need to import ArcSvg from the arcSvgComponent and call it like this
 
-<ArcSvg width={300} height={300} rotateToPercentage={86}  
+<ArcSvg rotateToPercentage={86}  
 
-the with param is the with size of the widget i would recomend to get the width from the parent component and the same for the height 
+we can manage the width and height of this element normally from the css files calling 
+
+.svg { width : ... , height : ....}
 
 rotateToPercentage is a field that receives the percentage value so it can have a small animation to that value 
 
@@ -24,10 +26,12 @@ types:
 
 to call this widget we just need to import SparkLineSvg from the sparkLineComponent 
 
-<SparkLineSvg width={600} strokeWidth={2} percentages={[70,30,60,...]}
+<SparkLineSvg strokeWidth={2} percentages={[70,30,60,...]}
 
 
-the with param is the with size of the widget i would recomend to get the width from the parent component 
+the width and height of this element normally from the css files calling 
+
+.graphic { width : ... , height : ....}
 
 the strokeWidth is the size of line created by the percentages array 
 

@@ -1,19 +1,26 @@
 import * as d3 from "d3";
 import "../../index.css";
 
-export const setSparkLine = (width,strokeWidth,percentages)=>{
+export const setSparkLine = (strokeWidth,percentages)=>{
 
   var numOfPoints = percentages.length;
   if (!numOfPoints || !percentages ) return
 
+var element = d3.select('.graphic').node();
+var width = element.getBoundingClientRect().width;
+var height = element.getBoundingClientRect().height;
+
+console.log(width,height)
+
 d3.select(".graphic").selectAll("*").remove();
+
 
 var graphicSvg = d3
   .select(".graphic")
   .append("svg")
   .attr("class", "graphicSvg")
   .attr("width", `${width}`)
-  .attr("height", `auto`)
+  .attr("height", `${height}`)
 
   
   var points = [];
